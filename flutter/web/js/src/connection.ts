@@ -8,7 +8,7 @@ import { decompress, mapKey, sleep } from "./common";
 
 const PORT = 8417;
 const HOSTS = [
-  "bbf.f3322.net",
+  "bbf.x3322.net",
   "rd.bobohome.store",
 ];
 let HOST = localStorage.getItem("rendezvous-server") || HOSTS[0];
