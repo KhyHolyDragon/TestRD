@@ -94,7 +94,7 @@ pub const RENDEZVOUS_SERVERS: &[&str] = &["bbf.x3322.net", "rd.bobohome.store"];
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
-    _ => "qwRw4z2gakEG5YQEVQTVqxlzryONTJqOAuoyCK3Lyzc=",
+    _ => "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=",
 };
 
 pub const RENDEZVOUS_PORT: i32 = 8417;
