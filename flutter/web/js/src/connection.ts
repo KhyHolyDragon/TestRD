@@ -6,7 +6,7 @@ import * as sha256 from "fast-sha256";
 import * as globals from "./globals";
 import { decompress, mapKey, sleep } from "./common";
 
-const PORT = 8417;
+const PORT = 9002;
 const HOSTS = [
   "bbf.x3322.net",
   "rd.bobohome.store",
