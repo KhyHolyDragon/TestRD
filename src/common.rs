@@ -903,9 +903,9 @@ pub fn get_api_server(api: String, custom: String) -> String {
     }
     let s0 = get_custom_rendezvous_server(custom);
     if !s0.is_empty() {
-        let s = crate::increase_port(&s0, -2);
+        let s = crate::increase_port(&s0, -3);
         if s == s0 {
-            return format!("https://{}:{}", s, config::RENDEZVOUS_PORT - 2);
+            return format!("https://{}:{}", s, config::RENDEZVOUS_PORT - 3);
         } else {
             return format!("https://{}", s);
         }
