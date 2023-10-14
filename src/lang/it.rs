@@ -365,6 +365,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Audio Input Device", "Dispositivo ingresso audio"),
         ("Use IP Whitelisting", "Usa elenco IP autorizzati"),
         ("Network", "Rete"),
+        ("Enable RDP", "Abilita RDP"),
         ("Pin Toolbar", "Blocca barra strumenti"),
         ("Unpin Toolbar", "Sblocca barra strumenti"),
         ("Recording", "Registrazione"),
@@ -555,6 +556,8 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Check for software update on startup", "All'avvio verifica presenza aggiornamenti programma"),
         ("upgrade_rustdesk_server_pro_to_{}_tip", "Aggiorna RustDesk Server Pro alla versione {} o successiva!"),
         ("pull_group_failed_tip", "Impossibile aggiornare il gruppo"),
-        ("Filter by intersection", "Filtra per incrocio")
+        ("Filter by intersection", "Filtra per incrocio"),
+        ("Remove wallpaper during incoming sessions", ""),
+        ("Test", ""),
     ].iter().cloned().collect();
 }
