@@ -972,10 +972,20 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
+               cmake \
                crossbuild-essential-arm64 \
+               curl \
+               g++ \
+               gcc \
+               git \
                nasm \
+               ninja-build \
                pkg-config \
-               yasm
+               unzip \
+               xz-utils \
+               wget \
+               yasm \
+               zip
 
       #- name: Maximize build space
       #  run: |
@@ -1158,10 +1168,19 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
+               cmake \
                crossbuild-essential-armhf \
+               curl \
+               g++ \
+               gcc \
+               git \
                nasm \
+               ninja-build \
                pkg-config \
-               yasm
+               unzip \
+               xz-utils \
+               yasm \
+               zip
 
       #- name: Maximize build space
       #  run: |
