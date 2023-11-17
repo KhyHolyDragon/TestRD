@@ -6,10 +6,10 @@ import * as sha256 from "fast-sha256";
 import * as globals from "./globals";
 import { decompress, mapKey, sleep } from "./common";
 
-const PORT = 8417;
+const PORT = 21116;
 const HOSTS = [
-  "bbf.x3322.net",
-  "rd.bobohome.store",
+  "longlovedan.familyds.com",
+  "ddns.xkongjian.top",
 ];
 let HOST = localStorage.getItem("rendezvous-server") || HOSTS[0];
 const SCHEMA = "ws://";
