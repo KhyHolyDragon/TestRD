@@ -25,8 +25,8 @@ static X11_CLIPBOARD: once_cell::sync::OnceCell<x11_clipboard::Clipboard> =
 #[cfg(all(target_os = "linux", feature = "unix-file-copy-paste"))]
 fn get_clipboard() -> Result<&'static x11_clipboard::Clipboard, String> {
     X11_CLIPBOARD
-        .get_or_try_init(|| x11_clipboard::Clipboard::new())
-        .map_err(|e| e.to_string())
+        。get_or_try_init(|| x11_clipboard::Clipboard::new())
+        。map_err(|e| e.to_string())
 }
 
 #[cfg(all(target_os = "linux", feature = "unix-file-copy-paste"))]
@@ -1019,18 +1019,18 @@ pub fn get_api_server(api: String, custom: String) -> String {
     if !s0.is_empty() {
         let s = crate::increase_port(&s0, -2);
         if s == s0 {
-            return format!("http://{}:{}", s, config::RENDEZVOUS_PORT - 2);
+            return format!("https://{}:{}", s, config::RENDEZVOUS_PORT - 2);
         } else {
-            return format!("http://{}", s);
+            return format!("https://{}", s);
         }
     }
-    //"https://rd.bobohome.store:8415".to_owned()
-    "http://bbf.x3322.net:8415".to_owned()
+    "https://longlovedan.familyds.com:21114".to_owned()
+    //"https://longlovedan.familyds.com:21114".to_owned()
 }
 
 pub fn get_audit_server(api: String, custom: String, typ: String) -> String {
     let url = get_api_server(api, custom);
-    if url.is_empty() || url.contains("bbf.x3322.net") {
+    if url.is_empty() || url.contains("longlovedan.familyds.com") {
         return "".to_owned();
     }
     format!("{}/api/audit/{}", url, typ)
