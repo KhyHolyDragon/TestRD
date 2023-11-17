@@ -25,8 +25,8 @@ static X11_CLIPBOARD: once_cell::sync::OnceCell<x11_clipboard::Clipboard> =
 #[cfg(all(target_os = "linux", feature = "unix-file-copy-paste"))]
 fn get_clipboard() -> Result<&'static x11_clipboard::Clipboard, String> {
     X11_CLIPBOARD
-        。get_or_try_init(|| x11_clipboard::Clipboard::new())
-        。map_err(|e| e.to_string())
+        .get_or_try_init(|| x11_clipboard::Clipboard::new())
+        .map_err(|e| e.to_string())
 }
 
 #[cfg(all(target_os = "linux", feature = "unix-file-copy-paste"))]
